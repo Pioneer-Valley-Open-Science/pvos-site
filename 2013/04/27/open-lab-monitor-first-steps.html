@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Open Lab Monitor: First Steps</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Pioneer Valley Open Science</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Open Lab Monitor: First Steps</h2>
+<p class="meta">27 Apr 2013</p>
+
+<div class="post">
+<p><img src="/assets/olm_throughhole.png" alt="olm_throughhole">Todd and I spent a good deal of time yesterday figuring out the minimal viable version of the Open Lab Monitor (OLM) and putting it into a schematic.  We ended up choosing to emulate the very elegant and minimal design of the <a href="http://jeelabs.net/projects/hardware/wiki/JeeNode">JeeNode</a>, remove the JeeNode&#39;s radio (though wireless connectivity will soon be revisited!) and add ethernet connectivity.  Another important design decision was to select only through-hole components for the board: this will both facilitate our own learning process, and it also allows for the possibility of an easy-to-assemble kit for use in K-12 and university contexts.</p>
+
+<p>So, what is the Open Lab Monitor?  It&#39;s essentially yet another take-off on the popular Arduino microcontroller platform, but tweaked slightly in order to make it easier to add peripherals that would be useful when making measurements in a scientific research context.  The main tweaks are the inclusion of some custom ports that can be connected to via some snug, cheap cables; our plan is to make a series of peripherals for this port interface that will allow for measuring temperature, humidity, moisture, pH, and do some simple electrochemistry.  The advantage of using an Arduino-based system is that doing so allows the user to connect to the incredible array of online tutorials that provide instructions for doing pretty much anything that a cheap microcontroller electronics platform allows; with minor modifications, the code from such projects should work on the Open Lab Monitor, as well.  We&#39;re also planning on designing a shield for the Raspberry Pi that would use the same custom connector interface, so that folks that would prefer to use the more powerful processor and operating system of the R-Pi can use the same inexpensive peripherals.  The decision as to whether to use an Arduino-based or R-Pi-based system is then mostly a matter of the user&#39;s comfort with the associated programming styles, as well as whether a low-power, battery-operated system is something they require (if so, then the Arduino is the way to go).</p>
+
+<p>We&#39;re hoping to finalize this initial design in the next week or so, and make our first printed circuit boards soon.  Then we&#39;ll be in a better position to start designing the several peripherals we have in mind for this board.</p>
+
+<p>Here&#39;s the schematic as it stands now:</p>
+
+<p><img src="/assets/olmetherv02.png" alt="olmetherv02"></p>
+
+<p>Exciting times ahead!</p>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+<img src="/assets/pvosS.png" align = "left"  width=100 style="padding:10px;">
+<a href="/">Pioneer Valley Open Science</a> is a group that formed in Amherst, MA in order to develop scientific projects that are accessible, open, and good for the world. We're greatly inspired by (and attempt to contribute to) <a href="http://publiclab.org">The Public Laboratory for Open Technology and Science</a>.<br />
+<b>Contact:</b> info @ pvos.org
+
+              </div>
+              <div class="contact">
+                <p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>
