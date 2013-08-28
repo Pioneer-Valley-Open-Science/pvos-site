@@ -26,6 +26,8 @@
 <p class="meta">18 Jun 2013</p>
 
 <div class="post">
+<p><i>Craig&#39;s potentiostat journal:</i></p>
+
 <p>When I got back to Providence, I first hit the books (well, just “<a href="http://www.amazon.com/Art-Electronics-Paul-Horowitz/dp/0521370957">The Art of Electronics</a>”) to refresh myself of op-amp circuit design (alright, let’s not pretend that I ever once understood how they worked).   Then, I had the good sense just to plug the DIY pstat into a USB port and see if I could talk to it - it happened to be on a fresh install of Ubuntu 13.04.  After initial glimmers of success using <code>miniterm</code>, the connection became spotty. For good measure, I checked <code>dmesg</code>; here is what the kernel (3.8.0-19-generic) is thinking when it sees this new device:</p>
 <div class="highlight"><pre><code class="text language-text" data-lang="text">[83504.450100] usb 3-3.2: new full-speed USB device number 6 using xhci_hcd
 [83504.491003] usb 3-3.2: New USB device found, idVendor=0451, idProduct=f432
@@ -142,7 +144,7 @@ In [5]: ylabel(&quot;Current?&quot;)
 Out[5]: &lt;matplotlib.text.Text at 0x3d52350&gt;
 In [6]: savefig(&quot;JSpstat_10k_2probe.pdf&quot;)
 </code></pre></div>
-<p><img src="/assets/JSpstat_10k_2probe.png" alt=""></p>
+<p><a href="/assets/JSpstat_10k_2probe.png"><img width = 300 src = "/assets/JSpstat_10k_2probe.png"/></a></p>
 
 <p>Seems reasonable, the current-voltage (I-V) response of a resistor should be a straight line according to Ohm’s law!</p>
 
